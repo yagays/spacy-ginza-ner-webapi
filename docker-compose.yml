@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  spacy-ginza-ner-webapi:
+    container_name: spacy-ginza-ner-webapi
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # set true only if INSTALL_DEV is unset in the environment.
+        INSTALL_DEV: ${INSTALL_DEV-true} 
+    ports:
+      - 9000:9000      
