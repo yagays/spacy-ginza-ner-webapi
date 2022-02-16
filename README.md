@@ -1,4 +1,4 @@
-# FastAPI ML Template
+# Named Entity Extraction API with spaCy and GiNZA
 ## Run Web API
 ### Local
 
@@ -35,8 +35,3 @@ $ http POST http://127.0.0.1:9000/api/v1/predict input_text="2018年の夏にフ
 ```
 $ poetry run tox
 ```
-
-## Reference
-
-- [tiangolo/full\-stack\-fastapi\-postgresql: Full stack, modern web application generator\. Using FastAPI, PostgreSQL as database, Docker, automatic HTTPS and more\.](https://github.com/tiangolo/full-stack-fastapi-postgresql)
-- [eightBEC/fastapi\-ml\-skeleton: FastAPI Skeleton App to serve machine learning models production\-ready\.](https://github.com/eightBEC/fastapi-ml-skeleton)
