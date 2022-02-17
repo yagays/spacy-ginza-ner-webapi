@@ -6,13 +6,13 @@ import spacy
 from app.models.predict import Entity
 
 
-class BaseModel(ABC):
+class BaseMLModel(ABC):
     @abstractmethod
     def predict(self, req: Any) -> Any:
         raise NotImplementedError
 
 
-class SpacyGinzaNERModel(BaseModel):
+class SpacyGinzaNERModel(BaseMLModel):
     def __init__(self, ginza_model_name: str = "ja_ginza") -> None:
         self.nlp = spacy.load(ginza_model_name)
 
