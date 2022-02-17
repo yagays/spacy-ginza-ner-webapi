@@ -1,4 +1,7 @@
-# Named Entity Extraction API with spaCy and GiNZA
+# Named Entity Recognition API with spaCy and GiNZA
+
+![](docs/http_request.png)
+
 ## Run Web API
 ### Local
 
